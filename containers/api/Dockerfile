@@ -1,6 +1,6 @@
 FROM node:12.18.2
 
-RUN npm install -g express-generator-typescript
+RUN npm install -g express-generator
 
 WORKDIR /src
 
