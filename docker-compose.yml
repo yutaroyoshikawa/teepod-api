@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  gcloud:
+    build: ./containers/gcloud
+    tty: true
+    volumes:
+      - ./src:/src:cached
+  api:
+    build: ./containers/api
+    volumes:
+      - ./src:/src
